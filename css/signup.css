@@ -1,0 +1,97 @@
+:root {
+    --darkColor: #19283f;
+    --greenColor: #1eb1cc;
+    --redColor: #ff3150;
+    --yellowColor: #ffc400;
+    --sectionColor: #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--darkColor);
+    direction: rtl;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Start login */
+.container .page {
+    background-color: var(--sectionColor);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container .page .login {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .page .login .log {
+    background-color: var(--greenColor);
+    margin: 5px;
+    color: var(--darkColor);
+    width: calc((100% - 10px) / 2);
+    border: none;
+}
+.container .page .login .sign {
+    background-color: #fff;
+    margin: 5px;
+    color: var(--darkColor);
+    width: calc((100% - 10px) / 2);
+    border: none;
+}
+.container .page .login .log:focus {
+    color: var(--sectionColor);
+    background-color: var(--darkColor);
+}
+.container .page .login .sign:focus {
+    color: var(--sectionColor);
+    background-color: var(--darkColor);
+}
+.container .page .form h3 {
+    text-align: center;
+    background-color: var(--darkColor);
+    color: var(--sectionColor);
+    margin: auto;
+    border-radius: 6px;
+}
+.container .page .form input::placeholder {
+    color: #19283f73;
+}
+.container .page .form input:focus {
+    border: 1px solid var(--darkColor);
+    outline: none;
+}
+.container .page .radio input[type="radio"]:checked + label {
+    color: var(--greenColor);
+}
+.container .page .end .come {
+    background-color: var(--darkColor);
+    color: var(--sectionColor);
+}
+.container .page .end .come:focus {
+    background-color: var(--greenColor);
+    color: var(--sectionColor);
+}
+/* End login */
+/* Start sign-up */
+.container .sign-up h3 {
+    text-align: center;
+    background-color: var(--greenColor);
+    color: var(--sectionColor);
+    border-radius: 6px;
+}
+.container .butt .save {
+    background-color: var(--darkColor);
+    color: var(--sectionColor);
+}
+.container .butt .exit {
+    background-color: var(--greenColor);
+    color: var(--sectionColor);
+}
+/* End sign-up */
